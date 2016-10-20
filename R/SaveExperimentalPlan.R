@@ -101,7 +101,12 @@ SaveExperimentalPlan <-
           ), filename, append = TRUE)
         }
       }
-      write(c("",
+      write(c("    Case Else",
+              "",
+              "        msgBox(\"No condition specified for this participant\")",
+              "",
+              "End Select",
+              "",
               "' ASSIGNING CONDITION VALUES",
               ""),
             filename,
