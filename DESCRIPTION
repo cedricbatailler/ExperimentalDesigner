@@ -1,0 +1,15 @@
+Package: ExperimentalDesigner
+Type: Package
+Title: ExperimentalDesigner
+Version: 0.1.0
+Author: Cedric Batailler
+Maintainer: Cedric Batailler <cedric.batailler@univ-grenoble-alpes.fr>
+Description: Easy experimental plan creation.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+License: MIT
+Imports:
+    dplyr
+Suggests:
+    xlsx
