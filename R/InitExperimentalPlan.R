@@ -9,5 +9,13 @@
 
 InitExperimentalPlan <-
   function(n) {
-    data.frame(Participant = seq(1, n))
+    ExpPlan <- 
+      list(
+        N = n,
+        Factors = as.character(),
+        Plan = data.frame(Participant = seq(1, n))
+      )
+    class(ExpPlan) <- "ExperimentalPlan"
+    
+    ExpPlan
   }

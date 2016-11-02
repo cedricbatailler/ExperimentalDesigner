@@ -1,6 +1,6 @@
 #' Saves experimental plan as a file.
 #'
-#' @param data An experimental plan object.
+#' @param object An experimental plan object.
 #' @param name What should the created file be named.
 #' @param type What kind of file should be created (csv, xlsx, or e-prime inline).
 #' @param path (Optional) A path to where the created file should be saved.
@@ -16,12 +16,17 @@
 #' InitExperimentalPlan(80) %>%
 #'  AddFactor(Condition) %>%
 #'  RandomizeOrder() %>%
-#'  SavecExperimentalPlan("myplan.xlsx")
+#'  SaveExperimentalPlan("myplan.xlsx")
 
 SaveExperimentalPlan <-
-  function(data, name, type = "xlsx", path = NA) {
+  function(object, name, type = "xlsx", path = NA) {
     
-    # For xlsx export
+    if (!is.ExperimentalPlan(object)) {
+      stop("object is not an Experimental plan.",
+           call. = FALSE)
+    }
+    
+    data <- object$Plan
     
     filename <-
       ifelse(is.na(path),

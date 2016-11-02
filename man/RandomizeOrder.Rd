@@ -4,10 +4,10 @@
 \alias{RandomizeOrder}
 \title{Randomize order of your participant}
 \usage{
-RandomizeOrder(Data)
+RandomizeOrder(object)
 }
 \arguments{
-\item{Data}{}
+\item{object}{An experimental plan object.}
 }
 \value{
 A randomly ordered experimental plan.

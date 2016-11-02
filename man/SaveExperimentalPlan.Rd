@@ -4,10 +4,10 @@
 \alias{SaveExperimentalPlan}
 \title{Saves experimental plan as a file.}
 \usage{
-SaveExperimentalPlan(data, name, type = "xlsx", path = NA)
+SaveExperimentalPlan(object, name, type = "xlsx", path = NA)
 }
 \arguments{
-\item{data}{An experimental plan object.}
+\item{object}{An experimental plan object.}
 
 \item{name}{What should the created file be named.}
 
@@ -25,6 +25,6 @@ Condition <-
 InitExperimentalPlan(80) \%>\%
  AddFactor(Condition) \%>\%
  RandomizeOrder() \%>\%
- SavecExperimentalPlan("myplan.xlsx")
+ SaveExperimentalPlan("myplan.xlsx")
 }
 

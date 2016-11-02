@@ -4,12 +4,12 @@
 \alias{AddFactor}
 \title{Adds a factor to an experimental plan object}
 \usage{
-AddFactor(Data, Factor)
+AddFactor(object, factor)
 }
 \arguments{
-\item{Data}{An experimental plan object.}
+\item{object}{An experimental plan object.}
 
-\item{Factor}{Factor you wish to add to you experimental plan.
+\item{factor}{Factor you wish to add to you experimental plan.
 Factor must be specified as a vector object (see examples section).}
 }
 \value{

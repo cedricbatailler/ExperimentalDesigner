@@ -2,23 +2,26 @@
 % Please edit documentation in R/ReassignParticipantNumber.R
 \name{ReassignParticipantNumber}
 \alias{ReassignParticipantNumber}
-\title{Reassign participant number}
+\title{Reassign participant number.}
 \usage{
-ReassignParticipantNumber(Data)
+ReassignParticipantNumber(object)
 }
 \arguments{
-\item{Data}{}
+\item{object}{An experimental plan object.}
 }
 \value{
 An experimental plan object with participant number corresponding to row number.
 }
 \description{
-Reassign participant number
+Reassign participant number.
 }
 \examples{
+Condition <-
+  c("Eperimental", "Control")
+  
 InitExperimentalPlan(80) \%>\%
- AddFactor(Condition) \%>\%
- RandomizeOrder() \%>\%
- Reassign Participant Number
+  AddFactor(Condition) \%>\%
+  RandomizeOrder() \%>\%
+  ReassignParticipantNumber()
 }
 
