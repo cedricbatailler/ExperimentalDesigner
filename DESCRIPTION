@@ -2,7 +2,7 @@ Package: ExperimentalDesigner
 Type: Package
 Title: ExperimentalDesigner
 Version: 0.2.0
-Author@R: c(
+Authors@R: c(
     person("Cedric, "Batailler", "cedric.batailler@univ-grenoble-alpes.fr", c("aut", "cre"))
     )
 Description: Easy experimental plan creation.
