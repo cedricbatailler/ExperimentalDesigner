@@ -1,0 +1,43 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# ExperimentalDesigner
+
+[![CRAN status](http://www.r-pkg.org/badges/version/ExperimentalDesigner)](https://cran.r-project.org/package=ExperimentalDesigner)
+
+## Installation
+
+You can install ExperimentalDesigner from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("cedricbatailler/ExperimentalDesigner")
+```
+
+## Example
+
+This is a basic example which shows you how to use ExperimentalDesigner
+
+```{r example, eval = FALSE}
+library(ExperimentalDesigner)
+
+Condition <-
+  c("Eperimental", "Control")
+
+InitExperimentalPlan(80) %>%
+  AddFactor(Condition) %>%
+  RandomizeOrder() %>%
+  ReassignParticipantNumber() %>% 
+  SaveExperimentalPlan("myplan.xlsx")
+```
