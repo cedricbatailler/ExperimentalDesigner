@@ -3,7 +3,7 @@ Type: Package
 Title: ExperimentalDesigner
 Version: 0.2.0
 Authors@R: c(
-    person("Cedric, "Batailler", "cedric.batailler@univ-grenoble-alpes.fr", c("aut", "cre"))
+    person("Cedric, "Batailler", , "cedric.batailler@univ-grenoble-alpes.fr", c("aut", "cre"))
     )
 Description: Easy experimental plan creation.
 Encoding: UTF-8
