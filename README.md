@@ -3,7 +3,7 @@
 ExperimentalDesigner
 ====================
 
-[![CRAN status](http://www.r-pkg.org/badges/version/ExperimentalDesigner)](https://cran.r-project.org/package=ExperimentalDesigner)
+[![CRAN status](http://www.r-pkg.org/badges/version/ExperimentalDesigner)](https://cran.r-project.org/package=ExperimentalDesigner) [![Build Status](https://travis-ci.org/cedricbatailler/ExperimentalDesigner.svg?branch=master)](https://travis-ci.org/cedricbatailler/ExperimentalDesigner)
 
 Installation
 ------------
