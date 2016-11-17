@@ -102,7 +102,7 @@ SaveExperimentalPlan <-
         ), filename, append = TRUE)
 
         for(j in 2:ncol(Temp)) {
-          write(c(paste0("        ", colnames(Temp)[j], " = n\"", Temp[1,j], "\"")
+          write(c(paste0("        ", colnames(Temp)[j], " = \"", Temp[1,j], "\"")
           ), filename, append = TRUE)
         }
       }
